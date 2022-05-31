@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Program;
+use App\Models\User;
+use App\Models\Workout;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,11 +17,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\Habit::factory(10)->create();
+        \App\Models\Value::factory(7)->create();
+        \App\Models\Article::factory(10)->create();
+        \App\Models\Workout::factory(5)->create();
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }
